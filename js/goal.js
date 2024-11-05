@@ -13,7 +13,7 @@ const weightGainChart = `
         <td>Protein Shake</td>
         <td>1 serving</td>
         <td>500 calories</td>
-        <td><img src="https://thedaily9.in/wp-content/uploads/2023/01/Protein-shakes.jpg" alt="Protein Shake"></td>
+        <td><img src="https://assets.tmecosys.com/image/upload/t_web767x639/img/recipe/ras/Assets/65b07d07-f394-4759-98e6-f9ca32dc2e80/Derivates/67394c62-fa3b-4271-9c36-6e107752e584.jpg" alt="Protein Shake"></td>
       </tr>
       <tr>
         <td>Chicken Breast</td>

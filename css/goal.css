@@ -205,3 +205,43 @@ section {
 .option:hover {
   background-color: #0056b3;
 }
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  nav ul li {
+    margin-right: 15px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .goals-container {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .options {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .option {
+    width: 100%;
+  }
+
+  .calculator {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .food-table img {
+    width: 60px;
+    height: 60px;
+  }
+
+  footer {
+    padding: 5px;
+  }
+}

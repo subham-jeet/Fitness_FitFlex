@@ -217,3 +217,150 @@ footer {
 footer {
   animation-delay: 1.5s; 
 }
+/* Add this to the end of your CSS file (home.css) */
+
+/* Mobile screen adjustments */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .column,
+  .column-1,
+  .column-2,
+  .column-3 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .image-container img {
+    height: auto; /* Keep images responsive on mobile */
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 1em;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    text-align: center;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%; /* Fit cards nicely on small screens */
+  }
+
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+}
+/* Feedback form styling */
+.feedback-container {
+  background-color: #f36601;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-align: center;
+}
+
+.feedback-container input,
+.feedback-container textarea {
+  width: 80%;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.feedback-container button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #f36601;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.star-rating input {
+  display: none;
+}
+.star-rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.star-rating input[type="radio"] {
+  display: none; /* Hide the radio buttons */
+}
+
+.star-rating label {
+  font-size: 2em;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.star-rating input[type="radio"]:checked ~ label {
+  color: #ffd700; /* Color for selected stars */
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label {
+  color: #ffd700; /* Hover color for stars */
+}
+
+
+
+
+/* Feedback Display Styling */
+.feedback-display {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #212020;
+  color: #fff;
+  overflow: hidden;
+}
+
+.feedback-item {
+  font-size: 18px;
+  white-space: nowrap;
+  animation: slideLeft 10s linear infinite;
+}
+
+/* Animation for sliding text */
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
